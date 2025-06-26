@@ -1,0 +1,27 @@
+{
+  "name": "astro-integration-hello",
+  "version": "0.0.0",
+  "description": "",
+    "keywords": [],
+  "author": "",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+	"scripts": {
+		"dev": "tsup --watch",
+		"build": "tsup"
+	},
+
+  "peerDependencies": {
+    "astro": "^5.10.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.4",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "astro-integration-kit": "^0.18.0"
+  }
+}
