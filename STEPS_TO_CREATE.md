@@ -5,9 +5,10 @@ npm init -y
 npm install typescript @types/node --save-dev
 npx tsc --init
 ## does not matter if use npm or pnpm or yarn, fwiw
+## do tsup on other branch
 ## npm i tsup -D
-pnpm add tsup -D
-pnpm add astro-integration-kit
+# pnpm add tsup -D
+# pnpm add astro-integration-kit
 mkdir src
 touch README.md
 touch src/index.ts
