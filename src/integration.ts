@@ -23,7 +23,7 @@ export const integration = defineIntegration({
 				"astro:config:setup": (options) => {
 					options.injectScript(
 						"page",
-						`{console.log("test this!")};`
+						`import "astro-integration-hello/globalLog";`
 					)
 					logServerMessage("Integration Happened");
 				}
