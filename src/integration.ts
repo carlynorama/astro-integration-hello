@@ -20,7 +20,11 @@ export const integration = defineIntegration({
 	setup() {
 		return {
 			hooks: {
-				"astro:config:setup": () => {
+				"astro:config:setup": (options) => {
+					options.injectScript(
+						"page",
+						`{console.log("test this!")};`
+					)
 					logServerMessage("Integration Happened");
 				}
 				
