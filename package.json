@@ -1,6 +1,6 @@
 {
   "name": "astro-integration-hello",
-  "version": "0.0.0000001",
+  "version": "0.0.0",
   "description": "",
   "keywords": [],
   "author": "",
@@ -11,9 +11,10 @@
       "types": "./dist/index.d.ts",
       "default": "./dist/index.js"
     },
-    "./globalLog": "./scripts/support_script.js",
-    "./globalLog/index": "./scripts/support_script.js",
-    "./globalLog/index.js": "./scripts/support_script.js"
+    "./globalLog": {
+      "types": "./dist/scripts/support_script.d.js",
+      "default": "./dist/scripts/support_script.js"
+    }
   },
   "files": [
     "dist"
